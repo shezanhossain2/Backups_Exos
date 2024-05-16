@@ -1,0 +1,549 @@
+#
+# Module devmgr configuration.
+#
+configure snmp sysName "sw1"
+configure sys-recovery-level switch reset
+
+#
+# Module vlan configuration.
+#
+configure vlan default delete ports all
+configure vr VR-Default delete ports 1-3
+configure vr VR-Default add ports 1-3
+create qosprofile "QP2"
+create qosprofile "QP3"
+create qosprofile "QP4"
+create qosprofile "QP5"
+create qosprofile "QP6"
+create qosprofile "QP7"
+create vlan "hall1"
+configure vlan hall1 tag 11
+create vlan "hall10"
+configure vlan hall10 tag 20
+create vlan "hall100"
+configure vlan hall100 tag 110
+create vlan "hall11"
+configure vlan hall11 tag 21
+create vlan "hall12"
+configure vlan hall12 tag 22
+create vlan "hall13"
+configure vlan hall13 tag 23
+create vlan "hall14"
+configure vlan hall14 tag 24
+create vlan "hall15"
+configure vlan hall15 tag 25
+create vlan "hall16"
+configure vlan hall16 tag 26
+create vlan "hall17"
+configure vlan hall17 tag 27
+create vlan "hall18"
+configure vlan hall18 tag 28
+create vlan "hall19"
+configure vlan hall19 tag 29
+create vlan "hall2"
+configure vlan hall2 tag 12
+create vlan "hall20"
+configure vlan hall20 tag 30
+create vlan "hall21"
+configure vlan hall21 tag 31
+create vlan "hall22"
+configure vlan hall22 tag 32
+create vlan "hall23"
+configure vlan hall23 tag 33
+create vlan "hall24"
+configure vlan hall24 tag 34
+create vlan "hall26"
+configure vlan hall26 tag 36
+create vlan "hall27"
+configure vlan hall27 tag 37
+create vlan "hall28"
+configure vlan hall28 tag 38
+create vlan "hall29"
+configure vlan hall29 tag 39
+create vlan "hall3"
+configure vlan hall3 tag 13
+create vlan "hall30"
+configure vlan hall30 tag 40
+create vlan "hall31"
+configure vlan hall31 tag 41
+create vlan "hall32"
+configure vlan hall32 tag 42
+create vlan "hall33"
+configure vlan hall33 tag 43
+create vlan "hall34"
+configure vlan hall34 tag 44
+create vlan "hall35"
+configure vlan hall35 tag 45
+create vlan "hall36"
+configure vlan hall36 tag 46
+create vlan "hall37"
+configure vlan hall37 tag 47
+create vlan "hall38"
+configure vlan hall38 tag 48
+create vlan "hall39"
+configure vlan hall39 tag 49
+create vlan "hall4"
+configure vlan hall4 tag 14
+create vlan "hall40"
+configure vlan hall40 tag 50
+create vlan "hall41"
+configure vlan hall41 tag 51
+create vlan "hall42"
+configure vlan hall42 tag 52
+create vlan "hall43"
+configure vlan hall43 tag 53
+create vlan "hall44"
+configure vlan hall44 tag 54
+create vlan "hall45"
+configure vlan hall45 tag 55
+create vlan "hall46"
+configure vlan hall46 tag 56
+create vlan "hall47"
+configure vlan hall47 tag 57
+create vlan "hall48"
+configure vlan hall48 tag 58
+create vlan "hall49"
+configure vlan hall49 tag 59
+create vlan "hall5"
+configure vlan hall5 tag 15
+create vlan "hall50"
+configure vlan hall50 tag 60
+create vlan "hall51"
+configure vlan hall51 tag 61
+create vlan "hall52"
+configure vlan hall52 tag 62
+create vlan "hall53"
+configure vlan hall53 tag 63
+create vlan "hall54"
+configure vlan hall54 tag 64
+create vlan "hall55"
+configure vlan hall55 tag 65
+create vlan "hall56"
+configure vlan hall56 tag 66
+create vlan "hall57"
+configure vlan hall57 tag 67
+create vlan "hall58"
+configure vlan hall58 tag 68
+create vlan "hall59"
+configure vlan hall59 tag 69
+create vlan "hall6"
+configure vlan hall6 tag 16
+create vlan "hall60"
+configure vlan hall60 tag 70
+create vlan "hall61"
+configure vlan hall61 tag 71
+create vlan "hall62"
+configure vlan hall62 tag 72
+create vlan "hall63"
+configure vlan hall63 tag 73
+create vlan "hall64"
+configure vlan hall64 tag 74
+create vlan "hall65"
+configure vlan hall65 tag 75
+create vlan "hall66"
+configure vlan hall66 tag 76
+create vlan "hall67"
+configure vlan hall67 tag 77
+create vlan "hall68"
+configure vlan hall68 tag 78
+create vlan "hall69"
+configure vlan hall69 tag 79
+create vlan "hall7"
+configure vlan hall7 tag 17
+create vlan "hall70"
+configure vlan hall70 tag 80
+create vlan "hall71"
+configure vlan hall71 tag 81
+create vlan "hall72"
+configure vlan hall72 tag 82
+create vlan "hall73"
+configure vlan hall73 tag 83
+create vlan "hall74"
+configure vlan hall74 tag 84
+create vlan "hall75"
+configure vlan hall75 tag 85
+create vlan "hall76"
+configure vlan hall76 tag 86
+create vlan "hall77"
+configure vlan hall77 tag 87
+create vlan "hall78"
+configure vlan hall78 tag 88
+create vlan "hall79"
+configure vlan hall79 tag 89
+create vlan "hall8"
+configure vlan hall8 tag 18
+create vlan "hall80"
+configure vlan hall80 tag 90
+create vlan "hall81"
+configure vlan hall81 tag 91
+create vlan "hall82"
+configure vlan hall82 tag 92
+create vlan "hall83"
+configure vlan hall83 tag 93
+create vlan "hall84"
+configure vlan hall84 tag 94
+create vlan "hall85"
+configure vlan hall85 tag 95
+create vlan "hall86"
+configure vlan hall86 tag 96
+create vlan "hall87"
+configure vlan hall87 tag 97
+create vlan "hall88"
+configure vlan hall88 tag 98
+create vlan "hall89"
+configure vlan hall89 tag 99
+create vlan "hall9"
+configure vlan hall9 tag 19
+create vlan "hall90"
+configure vlan hall90 tag 100
+create vlan "hall91"
+configure vlan hall91 tag 101
+create vlan "hall92"
+configure vlan hall92 tag 102
+create vlan "hall93"
+configure vlan hall93 tag 103
+create vlan "hall94"
+configure vlan hall94 tag 104
+create vlan "hall95"
+configure vlan hall95 tag 105
+create vlan "hall96"
+configure vlan hall96 tag 106
+create vlan "hall97"
+configure vlan hall97 tag 107
+create vlan "hall98"
+configure vlan hall98 tag 108
+create vlan "hall99"
+configure vlan hall99 tag 109
+configure vlan Default add ports 1-2 untagged  
+configure vlan hall1 add ports 2 tagged  
+configure vlan hall10 add ports 2 tagged  
+configure vlan hall100 add ports 2 tagged  
+configure vlan hall11 add ports 2 tagged  
+configure vlan hall12 add ports 2 tagged  
+configure vlan hall13 add ports 2 tagged  
+configure vlan hall14 add ports 2 tagged  
+configure vlan hall15 add ports 2 tagged  
+configure vlan hall16 add ports 2 tagged  
+configure vlan hall17 add ports 2 tagged  
+configure vlan hall18 add ports 2 tagged  
+configure vlan hall19 add ports 2 tagged  
+configure vlan hall2 add ports 2 tagged  
+configure vlan hall20 add ports 2 tagged  
+configure vlan hall21 add ports 2 tagged  
+configure vlan hall22 add ports 2 tagged  
+configure vlan hall23 add ports 2 tagged  
+configure vlan hall24 add ports 2 tagged  
+configure vlan hall26 add ports 2 tagged  
+configure vlan hall27 add ports 2 tagged  
+configure vlan hall28 add ports 2 tagged  
+configure vlan hall29 add ports 2 tagged  
+configure vlan hall3 add ports 2 tagged  
+configure vlan hall30 add ports 2 tagged  
+configure vlan hall31 add ports 2 tagged  
+configure vlan hall32 add ports 2 tagged  
+configure vlan hall33 add ports 2 tagged  
+configure vlan hall34 add ports 2 tagged  
+configure vlan hall35 add ports 2 tagged  
+configure vlan hall36 add ports 2 tagged  
+configure vlan hall37 add ports 2 tagged  
+configure vlan hall38 add ports 2 tagged  
+configure vlan hall39 add ports 2 tagged  
+configure vlan hall4 add ports 2 tagged  
+configure vlan hall40 add ports 2 tagged  
+configure vlan hall41 add ports 2 tagged  
+configure vlan hall42 add ports 2 tagged  
+configure vlan hall43 add ports 2 tagged  
+configure vlan hall44 add ports 2 tagged  
+configure vlan hall45 add ports 2 tagged  
+configure vlan hall46 add ports 2 tagged  
+configure vlan hall47 add ports 2 tagged  
+configure vlan hall48 add ports 2 tagged  
+configure vlan hall49 add ports 2 tagged  
+configure vlan hall5 add ports 2 tagged  
+configure vlan hall50 add ports 2 tagged  
+configure vlan hall51 add ports 2 tagged  
+configure vlan hall52 add ports 2 tagged  
+configure vlan hall53 add ports 2 tagged  
+configure vlan hall54 add ports 2 tagged  
+configure vlan hall55 add ports 2 tagged  
+configure vlan hall56 add ports 2 tagged  
+configure vlan hall57 add ports 2 tagged  
+configure vlan hall58 add ports 2 tagged  
+configure vlan hall59 add ports 2 tagged  
+configure vlan hall6 add ports 2 tagged  
+configure vlan hall60 add ports 2 tagged  
+configure vlan hall61 add ports 2 tagged  
+configure vlan hall62 add ports 2 tagged  
+configure vlan hall63 add ports 2 tagged  
+configure vlan hall64 add ports 2 tagged  
+configure vlan hall65 add ports 2 tagged  
+configure vlan hall66 add ports 2 tagged  
+configure vlan hall67 add ports 2 tagged  
+configure vlan hall68 add ports 2 tagged  
+configure vlan hall69 add ports 2 tagged  
+configure vlan hall7 add ports 2 tagged  
+configure vlan hall70 add ports 2 tagged  
+configure vlan hall71 add ports 2 tagged  
+configure vlan hall72 add ports 2 tagged  
+configure vlan hall73 add ports 2 tagged  
+configure vlan hall74 add ports 2 tagged  
+configure vlan hall75 add ports 2 tagged  
+configure vlan hall76 add ports 2 tagged  
+configure vlan hall77 add ports 2 tagged  
+configure vlan hall78 add ports 2 tagged  
+configure vlan hall79 add ports 2 tagged  
+configure vlan hall8 add ports 2 tagged  
+configure vlan hall80 add ports 2 tagged  
+configure vlan hall81 add ports 2 tagged  
+configure vlan hall82 add ports 2 tagged  
+configure vlan hall83 add ports 2 tagged  
+configure vlan hall84 add ports 2 tagged  
+configure vlan hall85 add ports 2 tagged  
+configure vlan hall86 add ports 2 tagged  
+configure vlan hall87 add ports 2 tagged  
+configure vlan hall88 add ports 2 tagged  
+configure vlan hall89 add ports 2 tagged  
+configure vlan hall9 add ports 2 tagged  
+configure vlan hall90 add ports 2 tagged  
+configure vlan hall91 add ports 2 tagged  
+configure vlan hall92 add ports 2 tagged  
+configure vlan hall93 add ports 2 tagged  
+configure vlan hall94 add ports 2 tagged  
+configure vlan hall95 add ports 2 tagged  
+configure vlan hall96 add ports 2 tagged  
+configure vlan hall97 add ports 2 tagged  
+configure vlan hall98 add ports 2 tagged  
+configure vlan hall99 add ports 2 tagged  
+configure vlan Mgmt ipaddress 192.168.56.101 255.255.255.0
+configure qosscheduler strict-priority ports 1 
+configure qosscheduler strict-priority ports 2 
+configure qosscheduler strict-priority ports 3 
+
+#
+# Module mcmgr configuration.
+#
+
+#
+# Module otm configuration.
+#
+
+#
+# Module fdb configuration.
+#
+disable iparp vr VR-Mgmt refresh
+disable neighbor-discovery vr VR-Mgmt refresh
+
+#
+# Module rtmgr configuration.
+#
+
+#
+# Module policy configuration.
+#
+configure policy slices tci-overwrite 0
+
+#
+# Module aaa configuration.
+#
+create account admin shezan encrypted "$5$XYZD5A$8swr6O8FI.tJYSJ/0.cxIcdY.QdREox4sZ9EIflPTe2" 
+
+#
+# Module acl configuration.
+#
+
+
+
+
+#
+# Module bfd configuration.
+#
+
+#
+# Module bgp configuration.
+#
+
+#
+# Module cfgmgr configuration.
+#
+
+#
+# Module dnsAnalytics configuration.
+#
+
+#
+# Module dosprotect configuration.
+#
+
+#
+# Module dot1ag configuration.
+#
+
+#
+# Module eaps configuration.
+#
+
+#
+# Module edp configuration.
+#
+
+#
+# Module elrp configuration.
+#
+
+#
+# Module ems configuration.
+#
+
+#
+# Module epm configuration.
+#
+
+#
+# Module erps configuration.
+#
+
+#
+# Module esrp configuration.
+#
+
+#
+# Module ethoam configuration.
+#
+
+#
+# Module etmon configuration.
+#
+
+#
+# Module exsshd configuration.
+#
+enable ssh2
+
+#
+# Module hal configuration.
+#
+
+#
+# Module idMgr configuration.
+#
+
+#
+# Module ipSecurity configuration.
+#
+
+
+#
+# Module iqagent configuration.
+#
+
+#
+# Module isis configuration.
+#
+
+#
+# Module lldp configuration.
+#
+
+#
+# Module mrp configuration.
+#
+
+#
+# Module msdp configuration.
+#
+
+#
+# Module netDb configuration.
+#
+
+#
+# Module netLogin configuration.
+#
+
+#
+# Module netTools configuration.
+#
+enable dhcp vlan Default
+
+#
+# Module nodealias configuration.
+#
+configure nodealias ports 1 maxentries 8192
+configure nodealias ports 2 maxentries 4096
+
+#
+# Module ntp configuration.
+#
+
+#
+# Module ospf configuration.
+#
+
+#
+# Module ospfv3 configuration.
+#
+
+#
+# Module pim configuration.
+#
+
+#
+# Module poe configuration.
+#
+
+#
+# Module rip configuration.
+#
+
+#
+# Module ripng configuration.
+#
+
+#
+# Module snmpMaster configuration.
+#
+configure snmpv3 engine-id 03:08:00:27:13:f8:18
+enable snmp access
+disable snmp access snmp-v1v2c
+enable snmp access snmpv3
+
+#
+# Module stp configuration.
+#
+configure mstp region 08002713f818
+
+#
+# Module techSupport configuration.
+#
+
+#
+# Module telnetd configuration.
+#
+
+#
+# Module tftpd configuration.
+#
+
+#
+# Module thttpd configuration.
+#
+
+#
+# Module twamp configuration.
+#
+
+#
+# Module vmt configuration.
+#
+
+#
+# Module vrrp configuration.
+#
+
+#
+# Module vsm configuration.
+#
+
+#
+# Module vpex configuration.
+#
